@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="../../bootstrap-1/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./currency conventer.css">
+</head>
+<body>
+<div id="a1" class="a1 container d-flex flex-wrap justify-content-center align-items-center mt-5">
+    <div class="a2 row justify-content-center align-items-center" id="a2">
+
+        
+    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-10 card p-4 text-center">
+        <h1 class="mb-4 a3 text-white">Currency Converter</h1>
+
+        <div class="input-group mb-4 d-flex flex-wrap a4">
+            <input type="text" id="amount" class="form-control mb-3 text-center a5" placeholder="Enter Amount" required>
+
+            <select id="fromCurrency" class="form-select mb-3 a6">
+            <option value="INR">Indian Rupee</option>
+            <option value="USD">United States Dollar</option>
+            <option value="EUR">Euro</option>
+            <option value="GBP">British Pound</option>
+            <option value="AMD">Armenian Dram</option>
+            <option value="HKD">Hong Kong Dollar</option>
+            <option value="MYR">Malaysian Ringgit</option>
+            <option value="NPR">Nepalese Rupee</option>
+            <option value="NZD">New Zealand Dollar</option>
+            <option value="SGD">Singapore Dollar</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="CHF">Swiss Franc</option>           
+            </select>
+        </div>
+
+        <div class="input-group mb-4 a7">
+        <input type="text" id="result" class="form-control mb-3 a8 text-center" placeholder="Converted Amount" required readonly>
+
+        <select id="toCurrency" class="form-select mb-3 a9">
+        <option value="USD">United States Dollar</option>
+        <option value="INR">Indian Rupee</option>
+        <option value="EUR">Euro</option>
+        <option value="AUD">Australian Dollar</option>
+        <option value="CAD">Canadian Dollar</option>
+        <option value="CHF">Swiss Franc</option>
+        <option value="CNY">Chinese Yuan</option>
+        <option value="JPY">Japanese Yen</option>
+        <option value="KRW">South Korean Won</option>
+        <option value="MXN">Mexican Peso</option>
+        <option value="PHP">Philippine Peso</option>
+        <option value="RUB">Russian Ruble</option>
+        <option value="ZAR">South African Rand</option>
+        <option value="THB">Thai Baht</option>
+        <option value="MYR">Malaysian Ringgit</option>
+        <option value="NPR">Nepalese Rupee</option>
+        <option value="NZD">New Zealand Dollar</option>
+        <option value="SGD">Singapore Dollar</option>
+        </select>
+
+        </div>
+
+        <button onclick="convertCurrency()" class="btn btn-primary btn-sm mx-auto ps-4 pe-4 pt-2 pb-2 fs-6 justify-content-center d-flex a10">Convert Amount</button>
+               
+        </div> <!-- col closed -->
+        
+    </div> <!-- row closed -->
+</div> <!-- container closed -->
+    <script src="./currency conventer.js"></script>
+</body>
+</html>
